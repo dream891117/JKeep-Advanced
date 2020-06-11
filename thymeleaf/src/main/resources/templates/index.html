@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎使用Thymeleaf</title>
+</head>
+<body>
+    <div>
+        <p>点击下面进入官网</p>
+        <a th:href="${website}"><p th:text="${name}"></p></a>
+    </div>
+</body>
+</html>

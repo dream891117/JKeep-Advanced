@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thymeleaf 测试页</title>
+</head>
+<body>
+
+
+    <h3>加载一个下拉框</h3>
+    <select style="width: 200px;border: 3px solid red">
+        <option th:each="area : ${areaMap}" th:value="${area.key}" th:text="${area.value}"></option>
+    </select>
+
+    <h3>显示一张互联网图片</h3>
+    <img th:src="${remoteImagePath}" style="border: 3px solid red">
+
+    <h3>显示一张本地图片</h3>
+    <img th:src="${localImagePath}" style="border: 3px solid red">
+
+</body>
+</html>

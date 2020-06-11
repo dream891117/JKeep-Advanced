@@ -1,0 +1,7 @@
+spring:
+  main:
+    ### NONE , SERVLET , REACTIVE
+    web-application-type: servlet
+
+server:
+  port: 1117
