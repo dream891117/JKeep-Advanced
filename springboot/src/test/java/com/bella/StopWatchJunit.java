@@ -1,15 +1,18 @@
 package com.bella;
 
+import org.junit.Test;
+
 import org.springframework.util.StopWatch;
 
 /**
  @Date: 2020/6/10-10:56
  @Author Genie
- @Description:
+ @Description: StopWatch 测试
  */
 public class StopWatchJunit {
 
-	public static void main(String[] args) {
+	@Test
+	public void test001(){
 
 		StopWatch stopWatch = new StopWatch();
 		stopWatch.start("测试StopWatch");

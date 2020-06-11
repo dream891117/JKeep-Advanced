@@ -6,7 +6,11 @@
 
 	<groupId>com.bella</groupId>
 	<artifactId>springboot</artifactId>
+	<packaging>pom</packaging>
 	<version>1.0-SNAPSHOT</version>
+	<modules>
+		<module>springboot_001</module>
+	</modules>
 
 	<!-- SpringBoot 快速开发框架 , 整合第三方常用的框架 , 定义了第三方版本 -->
 	<!-- 引入 parent-->
@@ -30,6 +34,11 @@
 			<!--<artifactId>spring-boot-starter-webflux</artifactId>-->
 		<!--</dependency>-->
 
+		<!-- SpringBoot 测试依赖 , 包含Junit -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+		</dependency>
 
 
 	</dependencies>

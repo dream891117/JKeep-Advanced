@@ -38,7 +38,7 @@ public class BellaApplication_1 {
 //				" |______  /\\___  >____/____(____  / \\_______ \\_____  /\\_______ \\_____  /\n" +
 //				"        \\/     \\/               \\/          \\/     \\/         \\/     \\/ "));
 
-		ConfigurableApplicationContext applicationContext = springApplication.run(args);
+		ConfigurableApplicationContext applicationContext = springApplication.run();
 
 		/**
 		 * 【查看源码】
