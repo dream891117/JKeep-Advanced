@@ -3,7 +3,7 @@
 
 ### 下述表格是针对工程中各个模块的功能解释
 
-| Module | Comment |
+| <u>**Module**</u> | <u>**Comment**</u> |
 |---|---|
 | ***springboot*** | SpringBoot源码分析 |
 | ***thymeleaf*** | SpringBoot整合Thymeleaf |
