@@ -1,3 +1,14 @@
 server:
   ## 设置WEB服务器端口号
   port: 1118
+
+spring:
+  thymeleaf:
+    prefix: classpath:/templates/
+    check-template: true
+    suffix: .html
+    encoding: UTF-8
+    servlet:
+      content-type: text/html
+    mode: HTML5
+    cache: false

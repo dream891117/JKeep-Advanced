@@ -6,6 +6,7 @@
 
 	<groupId>com.bella</groupId>
 	<artifactId>thymeleaf</artifactId>
+	<!-- 如果这里不定义版本, 版本号将跟 parent 的 version 一致 -->
 	<version>1.0-SNAPSHOT</version>
 
 	<!-- SpringBoot 公共资源版本定义 -->
@@ -13,7 +14,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.1.8.RELEASE</version>
+		<version>2.3.0.RELEASE</version>
 	</parent>
 
 	<dependencies>
@@ -39,5 +40,34 @@
 			<scope>true</scope>
 		</dependency>
 
+		<!-- 使用 Lombok 注解 -->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.12</version>
+			<scope>provided</scope>
+		</dependency>
+
 	</dependencies>
+
+	<!-- <build > 主要用于编译设置 -->
+	<build>
+		<!-- 定义打包成jar的名字 -->
+		<!-- 这里如果不定义 , 打包成的jar名字格式为 : <artifactId> + <version> -->
+		<finalName>thymeleaf</finalName>
+		<plugins>
+			<!--SpringBoot maven插件-->
+			<!-- 可以将应用打成一个可执行的jar包 -->
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<!-- 设置启动入口 -->
+				<!-- manClass即使不配置 , SprinBoot也在打包的时候也清楚入口是哪个 , 其实不用配置 -->
+				<configuration>
+					<mainClass>com.bella.ThymeleafApplication</mainClass>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
 </project>

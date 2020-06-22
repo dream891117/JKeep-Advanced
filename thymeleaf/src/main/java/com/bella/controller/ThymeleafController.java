@@ -28,7 +28,7 @@ public class ThymeleafController {
 	 *
 	 *  如果没有目录, 直接 /页面名
 	 */
-	final String TH_TEST_PAGE = "/th/test";
+	final String TH_TEST_PAGE = "th/test";
 
 	@RequestMapping("/index")
 	public String index(Model model){

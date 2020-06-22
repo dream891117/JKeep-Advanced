@@ -5,13 +5,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.bella</groupId>
-	<artifactId>springboot</artifactId>
-	<packaging>pom</packaging>
+	<artifactId>junit</artifactId>
 	<version>1.0-SNAPSHOT</version>
 
-	<!-- SpringBoot 快速开发框架 , 整合第三方常用的框架 , 定义了第三方版本 -->
-	<!-- 引入 parent-->
-	<!-- 为什么 2.0.6 可以点进去看 pom , 但是 2.1.8 和 2.3.0 不行呢 ?-->
+
+	<!-- SpringBoot 公共资源版本定义 -->
+	<!-- SpringBoot 控制了所有第三方依赖的版本号 , 好处 : 以后我们导入依赖默认是不需要版本号的 -->
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
@@ -19,32 +18,19 @@
 	</parent>
 
 	<dependencies>
-		<!-- Springboot Web 整合了 Springmvc , Spring -->
+
+		<!-- Web 场景需要 -->
+		<!-- 引入了Web模板开发需要的相关jar包 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
-		<!-- Spring 5 新特性 : 响应式编程 -->
-		<!--<dependency>-->
-			<!--<groupId>org.springframework.boot</groupId>-->
-			<!--<artifactId>spring-boot-starter-webflux</artifactId>-->
-		<!--</dependency>-->
-
 		<!-- SpringBoot 测试依赖 , 包含Junit -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-			<!-- 排除对 Junit4 的支持-->
-			<!--<exclusions>-->
-				<!--<exclusion>-->
-					<!--<groupId>org.junit.vintage</groupId>-->
-					<!--<artifactId>junit-vintage-engine</artifactId>-->
-				<!--</exclusion>-->
-			<!--</exclusions>-->
 		</dependency>
-
 
 	</dependencies>
 
