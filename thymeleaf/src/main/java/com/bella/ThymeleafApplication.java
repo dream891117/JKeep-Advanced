@@ -13,8 +13,7 @@ public class ThymeleafApplication {
 
 	public static void main(String[] args) {
 
-		System.out.println("启动类为 : " + ThymeleafApplication.class );
-		SpringApplication.run(ThymeleafApplication.class);
+		SpringApplication.run(ThymeleafApplication.class,args);
 
 	}
 

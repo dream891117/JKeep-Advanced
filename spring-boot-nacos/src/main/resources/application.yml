@@ -1,0 +1,6 @@
+server:
+  port: 1119
+
+nacos:
+  config:
+  server-addr: http://1024dev.cn:8848
