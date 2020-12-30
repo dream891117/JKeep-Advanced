@@ -1,0 +1,24 @@
+### 单节点Redis
+#
+#spring:
+#  redis:
+#    host: 111.229.7.244
+#    port: 6379
+#    password:
+#    timeout: 2000
+#    jedis:
+#      pool:
+#        max-active: 100
+#        max-idle: 100
+#        min-idle: 100
+#        max-wait: 100
+
+
+
+spring:
+  redis:
+    ## Database index used by the connection factory.
+    database: 0
+    ## Connection URL. Overrides host, port, and password. User is ignored.
+    ## Example: redis://user:password@example.com:6379
+    url: redis://user:dream891117@111.229.7.244:9201

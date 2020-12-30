@@ -1,0 +1,8 @@
+spring:
+  redis:
+    ## Database index used by the connection factory.
+    database: 0
+    ## Connection URL. Overrides host, port, and password. User is ignored.
+    ## Example: redis://user:password@example.com:6379
+    url: redis://user:dream891117@111.229.7.244:9201
+
